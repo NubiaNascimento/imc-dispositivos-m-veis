@@ -28,20 +28,25 @@
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/edit_peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_backgroud"
-        android:padding="25dp"
-        android:layout_marginTop="24dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
         android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_backgroud"
         android:hint=" Qual é o seu peso?"
+        android:inputType="number"
+        android:padding="25dp"
+        android:textColor="@color/white"
         android:textColorHint="#000000"
         android:textSize="16sp"
-        android:textColor="@color/white"
-        android:inputType="number"/>
+        android:drawableStart="@drawable/fitness_center_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"/>
 
     <EditText
+        android:id="@+id/edit_altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_backgroud"
@@ -53,27 +58,32 @@
         android:textColorHint="#000000"
         android:textSize="16sp"
         android:textColor="@color/white"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:drawableStart="@drawable/arrow_upward_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/bottom_calcular"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="39dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/button_backgroud"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:padding="10dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"/>
 
     <TextView
+        android:id="@+id/text_view_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="21.9"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:textSize="55dp"
         android:background="@drawable/button"
         android:padding="25dp"/>
